@@ -3,27 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Music Player</title>
+  <title>Music Player</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src=""></script>
 </head>
 <body>
-  <div class="player">
-    <h2>Now Playing</h2>
-    <div class="cover">
-      <img id="cover" src="img/cover.jpg" alt="Album Cover">
-    </div>
-    <h3 id="title">Song Title</h3>
-    <audio id="audio" src="song.mp3"></audio>
-    <div class="controls">
-      <button id="prev" class="btn">⏮️</button>
-      <button id="play" class="btn">▶️</button>
-      <button id="next" class="btn">⏭️</button>
-    </div>
-    <div class="progress-container" id="progress-container">
-      <div class="progress" id="progress"></div>
-    </div>
-    <div class="time">
-      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+  <div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </div>
   </div>
   <script src="js/script.js"></script>
