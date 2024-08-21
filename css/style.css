@@ -1,10 +1,11 @@
-*{
-   margin: 0; 
-   padding: 0;
-   font-family: 'Poppins', sans-serif;
-   box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 100%;
     height: 120vh;
     background: #333;
@@ -13,18 +14,22 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.music-player{
-    background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);;
+
+.music-player {
+    background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
     width: 400px;
     padding: 25px 35px;
     text-align: center;
+    border-radius: 10px; /* Added rounded corners for a smoother look */
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-nav .circle{
+
+nav .circle {
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -33,23 +38,27 @@ nav .circle{
     color: red;
     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
 }
-.song-img{
+
+.song-img {
     width: 200px;
-    border-radius: 5%;
-    border: 8px solid #ffff;
-    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);    
+    border-radius: 10%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
 }
-.music-player h1{
+
+.music-player h1 {
     font-size: 20px;
     font-weight: 400;
     color: #333;
     margin-top: 20px;
 }
-.music-player p{
+
+.music-player p {
     font-size: 14px;
     color: #333;
 }
-#progress{
+
+#progress {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
@@ -59,7 +68,8 @@ nav .circle{
     cursor: pointer;
     margin: 40px 0;
 }
-#progress::-webkit-slider-thumb{
+
+#progress::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     background: gold;
@@ -69,12 +79,14 @@ nav .circle{
     border: 8px solid #fff;
     box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
 }
-.controls{
+
+.controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.controls div{
+
+.controls div {
     width: 60px;
     height: 60px;
     margin: 20px;
@@ -86,8 +98,10 @@ nav .circle{
     color: orangered;
     box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
     cursor: pointer;
+    transition: transform 0.3s ease; /* Added transition for smooth scaling */
 }
-.controls div:nth-child(2){
+
+.controls div:nth-child(2) {
     transform: scale(1.5);
     background: orangered;
     color: #fff;
