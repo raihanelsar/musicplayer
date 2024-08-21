@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #282828;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .player {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cover img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .controls {
+    margin: 20px 0;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: #1db954;
+  }
+  
+  .progress-container {
+    background: #444;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 5px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .progress {
+    background: #1db954;
+    border-radius: 5px;
+    height: 100%;
+    width: 0;
+  }
+  
+  .time {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
